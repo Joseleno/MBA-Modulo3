@@ -1,14 +1,11 @@
-# **[Título do Projeto] - Aplicação de Blog Simples com MVC e API RESTful**
+# **[Título do Projeto] - Plataforma De Educação Online**
 
 ## **1. Apresentação**
 
-Bem-vindo ao repositório do projeto **[Título do Projeto]**. Este projeto é uma entrega do MBA DevXpert Full Stack .NET e é referente ao módulo **Introdução ao Desenvolvimento ASP.NET Core**.
-O objetivo principal desenvolver uma aplicação de blog que permite aos usuários criar, editar, visualizar e excluir posts e comentários, tanto através de uma interface web utilizando MVC quanto através de uma API RESTful.
-Descreva livremente mais detalhes do seu projeto aqui.
+Bem-vindo ao repositório do projeto **Plataforma De Educação Online**. Este projeto é uma entrega dedicado ao aprofundamento nas práticas de arquitetura, modelagem e qualidade de software, essenciais para o desenvolvimento de sistemas robustos e escaláveis.
 
-### **Autor(es)**
-- **Nome 1**
-- **Nome 2**
+### **Autor**
+- **Joseleno Moreira**
 
 ## **2. Proposta do Projeto**
 

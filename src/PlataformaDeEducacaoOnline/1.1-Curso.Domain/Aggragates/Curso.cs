@@ -1,13 +1,8 @@
-﻿using _1._1_Curso.Domain.Entities;
-using _1._1_Curso.Domain.ValueObjects;
+﻿using Curso.Domain.Entities;
+using Curso.Domain.ValueObjects;
 using Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace _1._1_Curso.Domain.Aggragates
+namespace Curso.Domain.Aggragates
 {
     public class Curso : Entity
     {
@@ -27,7 +22,7 @@ namespace _1._1_Curso.Domain.Aggragates
         {
             Nome = nome;
             ConteudoProgramatico = conteudoProgramatico;
-            Atualizar(usuario);
+            Modificar(usuario);
         }
 
     }

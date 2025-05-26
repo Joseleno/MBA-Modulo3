@@ -8,7 +8,7 @@ public class Entity
     public DateTime DataCriacao { get; set; }
     public DateTime? DataModificacao { get; set; }
 
-    public void Atualizar(string usuario)
+    public void Modificar(string usuario)
     {
         UsuarioModificacao = usuario;
         DataModificacao = DateTime.Now;
