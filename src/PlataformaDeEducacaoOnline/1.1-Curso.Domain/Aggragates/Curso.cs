@@ -4,26 +4,31 @@ using Common;
 
 namespace Curso.Domain.Aggragates
 {
-    public class Curso : Entity
+    public class Curso(string nome, string descricao, Guid professorId, string usuarioCriacao) : Entity(usuarioCriacao)
     {
-        public string Nome { get; private set; } = null!;
-        public string? Descricao { get; private set; }
-        public Guid ProfessorId { get; private set; }
+        public string Nome { get; private set; } = nome;
+        public string? Descricao { get; private set; } = descricao;
+        public Guid ProfessorId { get; private set; } = professorId;
         public virtual ConteudoProgramatico? ConteudoProgramatico { get; private set; }
         public virtual ICollection<Aula> Aulas { get; private set; } = [];
         public decimal Preco { get; private set; }
 
-        
         public void RegistrarAula(Aula aula)
         {
             Aulas.Add(aula);
         }
-        public void Modificar(string nome, ConteudoProgramatico conteudoProgramatico, string usuario)
+
+        public void Update(string nome, ConteudoProgramatico conteudoProgramatico, string usuario)
         {
             Nome = nome;
             ConteudoProgramatico = conteudoProgramatico;
-            Modificar(usuario);
+            Update(usuario);
         }
 
+        public void UpdatePreco(decimal preco, string usuario)
+        {
+            Preco = preco;
+            Update(usuario);
+        }
     }
 }

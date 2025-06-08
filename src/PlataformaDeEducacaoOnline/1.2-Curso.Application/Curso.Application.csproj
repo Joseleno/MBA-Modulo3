@@ -7,4 +7,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Commands\Add\" />
+    <Folder Include="Commands\Delete\" />
+    <Folder Include="Commands\Update\" />
+    <Folder Include="Queries\" />
+  </ItemGroup>
+
 </Project>

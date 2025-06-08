@@ -1,11 +1,4 @@
-﻿using Curso.Domain.Aggragates;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Curso.Domain.Interfaces;
+﻿namespace Curso.Domain.Interfaces;
 
 public interface ICursoRepository
 {
