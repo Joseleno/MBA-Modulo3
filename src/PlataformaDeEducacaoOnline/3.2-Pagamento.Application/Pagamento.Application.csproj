@@ -2,9 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-    <RootNamespace>_3._2_Pagamento.Application</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\Add\" />
+    <Folder Include="Commands\Delete\" />
+    <Folder Include="Commands\Update\" />
+    <Folder Include="Queries\" />
+  </ItemGroup>
 
 </Project>

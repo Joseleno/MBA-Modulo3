@@ -8,10 +8,19 @@ public class Entity
     public DateTime DataCriacao { get; set; }
     public DateTime? DataModificacao { get; set; }
 
-    public void Atualizar(string usuario)
+    public void Update(string usuario)
     {
         UsuarioModificacao = usuario;
         DataModificacao = DateTime.Now;
+    }
+
+    protected Entity(string usuarioCriacao)
+    {
+        Id = Guid.NewGuid();
+        DataCriacao = DateTime.UtcNow;
+        DataModificacao = DateTime.UtcNow;
+        UsuarioCriacao = usuarioCriacao;
+        UsuarioModificacao = usuarioCriacao;
     }
 
 }
